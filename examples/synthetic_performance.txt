@@ -1,0 +1,3 @@
+	Jsc	Voc	FF	Eta
+	mA/cm2	mV	%	%
+	20	800	75	12

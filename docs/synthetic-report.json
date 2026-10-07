@@ -1,0 +1,36 @@
+{
+  "human": {
+    "mode": "human",
+    "avt": 50.0,
+    "wavelength_range": [
+      380,
+      780
+    ],
+    "response_function": "CIE 1931 V(λ) 人眼明视觉响应",
+    "formula": "AVT = ∫T(λ)·S(λ)·V(λ)dλ / ∫S(λ)·V(λ)dλ",
+    "numerator": 91.22357925814998,
+    "denominator": 182.44715851629996
+  },
+  "plant": {
+    "mode": "plant",
+    "avt": 50.0,
+    "wavelength_range": [
+      400,
+      700
+    ],
+    "response_function": "叶绿素 a+b 吸收光谱",
+    "formula": "AVT_plant = ∫T(λ)·S(λ)·Chl(λ)dλ / ∫S(λ)·Chl(λ)dλ",
+    "numerator": 119.62847755,
+    "denominator": 239.2569551
+  },
+  "performance": {
+    "jsc": 20.0,
+    "voc": 0.8,
+    "ff": 75.0,
+    "pce": 12.0
+  },
+  "lue_percent": {
+    "human": 6.0,
+    "plant": 6.0
+  }
+}
