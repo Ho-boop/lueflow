@@ -1,5 +1,7 @@
 # LUEFlow — 光伏器件光谱与性能数据处理工具链
 
+[![Checks](https://github.com/Ho-boop/lueflow/actions/workflows/tests.yml/badge.svg)](https://github.com/Ho-boop/lueflow/actions/workflows/tests.yml)
+
 An independently developed Python toolchain for weighted transmittance calculations, light-utilization efficiency, and formatted device-performance tables.
 
 ## What it does
@@ -15,6 +17,8 @@ An independently developed Python toolchain for weighted transmittance calculati
 Python 3.10+; the desktop tools need a Python installation with Tkinter (normally included with python.org Windows installers).
 
 ```bash
+git clone https://github.com/Ho-boop/lueflow.git LUEFlow
+cd LUEFlow
 python -m pip install -e ".[dev,desktop]"
 python -m lue_calculator.cli examples/synthetic_T.txt --performance examples/synthetic_performance.txt --output outputs/report.json
 python -m pytest tests -q
